@@ -1,28 +1,33 @@
 ﻿div {
-    outline-color: black;
+    outline: 1px solid #000; /* Чёрная рамка */
 }
 .speed {
     color: white;
     background: blue;
 }
-a.next {
-    background: url(../image/next.png);
-    display: block;
-    width: 24px;
-    height: 24px;
-}
-.next {
+/*a.next {*/
+    /*background: url(../image/next.png);*/
+    /*display: block;*/
+    /*width: 14px;*/
+    /*height: 24px;*/
+/*}*/
+/*.next {*/
     /*width: 24px;*/
     /*height: 24px;*/
-    background: #fff url(../image/next.png) no-repeat 50% 50%;
-}
+    /*background: #fff url(../image/next.png) no-repeat 50% 50%;*/
+/*}*/
 #page-bottom {
-    padding: 20px 20px 0 20px;
+    padding: 20px 0px 0 0px;
     color: #353535;
     background: #f3f3f3;
     position: relative;
-    width: auto;
-    border-top: solid 1px #e3e3e3;
+    width: 100%;
+    /*border-top: solid 1px #e3e3e3;*/
     box-shadow: inset 0px 0px 0px 1px #fff;
     text-shadow: 1px 1px 0px rgba(255,255,255,0.9);
+}
+.green {
+    color: #82c12b;
+    font-size: 20px;
+    font-weight: bold;
 }
