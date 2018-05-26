@@ -11,11 +11,11 @@ a.next {
     width: 24px;
     height: 24px;
 }
-/*.next {*/
-    /*!*width: 24px;*!*/
-    /*!*height: 24px;*!*/
-    /*background: #fff url(../image/next.png) no-repeat 50% 50%;*/
-/*}*/
+.next {
+    /*width: 24px;*/
+    /*height: 24px;*/
+    background: #fff url(../image/next.png) no-repeat 50% 50%;
+}
 #page-bottom {
     padding: 20px 20px 0 20px;
     color: #353535;
