@@ -15,39 +15,41 @@
 
     ?>
 
-    <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4'>
+    <div class='col-xs-12 col-sm-12 col-md-6 col-lg-4 box'>
         <p class='green'>Тариф "<?php echo $group['title'] ?>"</p>
         <hr>
-        <div>
-            <p class='speed'><?php echo $group['speed'] ?> Мбит/с</p>
-            <p><?php echo $prices ?> ₽/мес</p>
-            <?php
+        <div class="row">
+            <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                <p class='speed'><?php echo $group['speed'] ?> Мбит/с</p>
+                <p class="price"><?php echo $prices ?> ₽/мес</p>
+                <?php
 
-            if (!empty($group['free_options'])) {
-                foreach ($group['free_options'] as $freeoption) {
-                    echo "<p>$freeoption</p>";
+                if (!empty($group['free_options'])) {
+                    foreach ($group['free_options'] as $freeoption) {
+                        echo "<p>$freeoption</p>";
+                    }
                 }
-            }
 
-            ?>
-            <button id='group<?php echo $gkey ?>' class='next'>></button>
-            <script>
-                $('#group<?php echo $gkey ?>').click(function(){
-                    $.ajax({
-                        type: "POST",
-                        url:  "tariffs.php",
-                        data: "gkey=" + <?php echo $gkey ?>,
-                        success: function(html){
-                            $("#content").html(html);
-                        }
+                ?>
+                <a><img id="group<?php echo $gkey ?>" class="next" src="next.png" alt="Кекс"></a>
+                <script>
+                    $('#group<?php echo $gkey ?>').click(function(){
+                        $.ajax({
+                            type: "POST",
+                            url:  "tariffs.php",
+                            data: "gkey=" + <?php echo $gkey ?>,
+                            success: function(html){
+                                $("#content").html(html);
+                            }
+                        });
+                        return false;
                     });
-                    return false;
-                });
-            </script>
+                </script>
+            </div>
         </div>
         <hr>
         <a href="<?php echo $group['link'] ?>">узнать подробнее на сайте www.sknt.ru</a>
-        <div id="shift"></div>
+        <div class="shift"></div>
     </div>
     <?php
     }

@@ -1,0 +1,79 @@
+﻿a {
+    margin: 0;
+}
+.box {
+    left: 10px;
+}
+p {
+    margin: 0;
+    padding: 0;
+    left: 5px;
+}
+hr {
+    margin: 6px;
+}
+p.center {
+    margin: 3px;
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+}
+p.green {
+    margin: 3px;
+    color: #82c12b;
+    font-size: 30px;
+}
+p.price {
+    margin: 2px;
+    color: #000000;
+    font-weight: bold;
+}
+p.speed {
+    left: -10px;
+    color: white;
+    background: blue;
+    width: 120px;
+    text-align: center;
+}
+.fon {
+    background: #e3e3e3;
+}
+.shift {
+    padding: 20px 0 0 0;
+    color: #353535;
+    background: #f3f3f3;
+    position: relative;
+    width: 100%;
+    box-shadow: inset 0 0 0 1px #fff;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.9);
+}
+.shiftbig {
+    padding: 35px 0 0 0;
+    color: #353535;
+    background: #f3f3f3;
+    position: relative;
+    width: 100%;
+    box-shadow: inset 0 0 0 1px #fff;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.9);
+}
+button.select {
+    outline: 1px solid #82c12b;
+    color: white;
+    height: 50px;
+    width: 550px;
+    background: #82c12b;
+    border: 1px solid #82c12b;
+    font-size: 20px;
+}
+img.back {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+}
+img.next {
+    position: absolute;
+    right: 10%;
+    top: 35%;
+
+}
+
