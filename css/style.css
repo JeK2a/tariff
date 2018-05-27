@@ -7,8 +7,8 @@
 }
 div {
     outline: 1px solid #000; /* Чёрная рамка */
-    /*margin: 0;*/
-    /*padding: 0;*/
+    margin: 0;
+    padding: 0;
 }
 p {
     /*padding: 0px;*/
@@ -19,12 +19,12 @@ p {
 p.center {
     text-align: center;
 }
-.green {
+p.green {
     color: #82c12b;
     font-size: 20px;
     font-weight: bold;
 }
-.speed {
+p.speed {
     color: white;
     background: blue;
     width: 120px;

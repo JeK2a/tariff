@@ -9,18 +9,15 @@
 
     <script type="text/javascript" src="jquery.js"></script>
 
-    <title>Tarifs</title>
+    <title>Tariffs</title>
 </head>
 <body>
-
-<!--<button id="start">Start</button>-->
-
 <div id="content"></div>
-
 <script>
     $(document).ready(function(){
-        $.ajax({type: "POST",
-            url: "groups.php",
+        $.ajax({
+            type: "POST",
+            url:  "groups.php",
             success: function(html){
                 $("#content").html(html);
             }
@@ -28,6 +25,5 @@
         return false;
     });
 </script>
-
 </body>
 </html>
