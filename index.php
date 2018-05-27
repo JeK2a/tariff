@@ -13,23 +13,19 @@
 </head>
 <body>
 
-<form id="myForm">
-    <input type="submit" value=">">
-</form>
+<!--<button id="start">Start</button>-->
 
 <div id="content"></div>
 
 <script>
     $(document).ready(function(){
-        // $('#myForm').submit(function(){
-            $.ajax({type: "POST",
-                url: "groups.php",
-                success: function(html){
-                    $("#content").html(html);
-                }
-            });
-            return false;
-        // });
+        $.ajax({type: "POST",
+            url: "groups.php",
+            success: function(html){
+                $("#content").html(html);
+            }
+        });
+        return false;
     });
 </script>
 
